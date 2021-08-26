@@ -1,0 +1,388 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width:100%;
+    height:100%;
+
+}
+
+.container{
+    height:800px;
+}
+
+.slider-one, .slider-two, .slider-three, .slider-four{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    animation: slider-one 12s linear infinite;
+    .slider-text{
+        position: absolute;
+        top:60%;
+        left:15%;
+        color:white;
+        width:700px;
+        text-transform: capitalize;
+        animation: text-up 12s linear infinite;
+        transform: translateX(-100px);
+        animation-delay: 0s;
+        h1{
+            font-size: 2.5rem;
+            margin-bottom:20px;
+            font-family:  'Playball', cursive;
+        }
+        p{
+            color:rgb(218, 242, 250);
+            font-size: 18px;
+            line-height:28px;
+        }
+    }
+}
+
+   
+ .slide-one-image, .slide-two-image, .slide-three-image, .slide-four-image{
+        width:130%;
+        height:100%;
+        background:url("../images/china5.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: zoom-out 6s linear infinite;
+        
+    }
+
+    .slider-two{
+        animation: slider-two 12s linear infinite;
+        .slide-two-image{
+            background-image: url("../images/us1.jpg");
+            .slider-text{
+                animation-delay: 3s;
+            }
+        }
+    }
+    .slider-three{
+        animation: slider-three 12s linear infinite;
+        .slide-three-image{
+            background-image: url("../images/china7.jpg");
+            .slider-text{
+                animation-delay: 6s;
+            }
+        }
+    }
+    .slider-four{
+        animation: slider-four 12s linear infinite;
+        .slide-four-image{
+            background-image: url("../images/us3.jpg");
+            .slider-text{
+                animation-delay: 9s;
+            }
+        }
+    }
+
+@keyframes slider-one{
+    0%{
+        visibility:visible;
+    }
+    25%{
+        visibility:hidden;
+    }
+    50%{
+        visibility:hidden;
+    }
+    75%{
+        visibility:hidden;
+    }
+    100%{
+        visibility:hidden;
+    }
+}
+
+@keyframes slider-two{
+    0%{
+        visibility:hidden;
+    }
+    25%{
+        visibility:hidden;
+    }
+    50%{
+        visibility:visible;
+    }
+    75%{
+        visibility:hidden;
+    }
+    100%{
+        visibility:hidden;
+    }
+}
+@keyframes slider-three{
+    0%{
+        visibility:hidden;
+    }
+    25%{
+        visibility:hidden;
+    }
+    50%{
+        visibility:hidden;
+    }
+    75%{
+        visibility:visible;
+    }
+    100%{
+        visibility:hidden;
+    }
+}
+@keyframes slider-four{
+    0%{
+        visibility:hidden;
+    }
+    25%{
+        visibility:hidden;
+    }
+    50%{
+        visibility:hidden;
+    }
+    75%{
+        visibility:hidden;
+    }
+    100%{
+        visibility:visible;
+        
+    }
+}
+
+@keyframes zoom-out{
+    100%{
+        width:100%;
+    }
+}
+@keyframes text-up{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@media (max-width:798px){
+    .slider-one, .slider-two, .slider-three, .slider-four{
+    .slider-text{
+        width:80%;
+    }}
+
+   
+}
+
+.navbar{
+  background:rgba($color: #6a6b6d, $alpha: 0.7);
+}
+.navbar-brand{
+    
+    img{
+    width:100px;}
+
+    
+}
+
+
+    .nav-link{
+        .fas{
+            color:darkgoldenrod;
+            padding:10px;
+        }
+    color:lightblue!important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+
+.dropdown-menu{
+    background: rgba($color: #82ade5, $alpha: 0.7);
+    width:200px;
+    li{
+    
+        a{
+        
+            color:white;
+            font-weight: 500;
+            font-family: 'Poppins',sans-serif;
+        }
+    }
+
+ 
+}
+.language{
+    i{
+        color:darkred !important;
+    }
+    font-size: 1em;
+    color:darkblue !important;
+}
+
+.season{
+    color:darkorchid;
+    font-family:'Playball', cursive;
+    font-size: 3em;
+}
+
+.company{
+    border: 2px solid green;
+}
+
+.introduce{
+    margin-top:20px;
+    i{
+        font-size: 4em;
+        color:darkgoldenrod;
+    }
+}
+.card{
+    
+    box-shadow: 5px 20px 30px 10px #888888;
+.card-body{
+    background-color: rgb(5, 5, 26);
+    color:white;
+    .card-title{
+        color:lightblue;
+    }
+    
+}
+.card-footer{
+    background-color: lightgrey;
+}}
+.box{
+    width:100%;
+
+    background: rgb(89, 89, 236);
+    h1{
+        font-size: 3em;
+        color:white;
+    }
+    hr{
+        
+        
+        width:150px;
+        height:4px;
+        color:white;
+    
+        margin:0  auto;
+        
+    }
+    p{
+        color:white;
+    }
+}
+.slick-slide{
+    margin: 0 20px;
+    img{
+        width:100%;
+    }
+}
+.slick-slider{
+    position:relative;
+    display:block;
+
+}
+.slick-list{
+    position:relative;
+    display:block;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+.slick-track{
+    position:relative;
+    top:0;
+    left:0;
+    display:block;
+}
+
+.slick-slide{
+    display:none;  
+    float:left;
+    height:100%;
+    min-height:1px;
+    img{
+        display:block;
+    }
+}
+.slick-initialized .slick-slide{
+    display:block;
+}
+
+footer{
+    background: rgb(42, 41, 44);
+    .box2{
+        position:relative;
+        img{
+            width:80%;
+        }
+        
+    h5{
+        position:relative;
+        left:10%;
+        color:lightblue;
+        text-align: left;
+    }
+    ul{
+        list-style: none;
+    a{
+        text-decoration: none;
+        color:white;
+    }}
+}
+.line1{
+    position: relative;
+    hr{
+        position:relative;
+        left:10%;
+        width:80%;
+        color:lightseagreen;
+        height:2px;
+        text-align: center;
+    }
+}
+.copyright{
+    display:flex;
+    position:relative;
+    
+    ul{
+        display:flex;
+        margin-right: 20px;
+        list-style: none;
+        position: relative;
+        left:10%;
+        li{
+            margin-right:15px;
+            a:hover{
+                color:darkgoldenrod;
+            }
+        }
+    }
+    p{
+        position: relative;
+        left:50%;
+        color:white;
+    }
+}
+.copy{
+    padding-top: 20px;
+}
+
+.box1{
+    display:flex;
+    border:2px solid green; 
+}
+}
